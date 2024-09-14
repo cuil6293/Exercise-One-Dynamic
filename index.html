@@ -3,9 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercise One</title>
+
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <!-- This is an html comment -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#box-model">Box Model</a></li>
+                <li><a href="#flexbox">Flexbox</a></li>
+                <li><a href="#positioning-elements">Positioning Elements</a></li>
+                <li><a href="#heading-usage">Heading Usage</a></li>
+                <li><a href="#simple-javascript">Simple Javascript</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="box-model" class="box-model-section">
+            <div class="box-model-wrapper">
+                <h2>CSS Box Model</h2>
+                <p>/* Padding is inside of the element in CSS */</p>
+                <p><strong>padding: 40px;</strong></p>
+                <p>/* Margin is outside the element in CSS */</p>
+                <p><strong>margin: 40px; (outside)</strong></p>
+                <p>/* Border is added to width and height of element in CSS */</p>
+                <p><strong>10px solid green;</strong></p>
+
+            </div>
+        </section>
+        <section id="flexbox" class="flexbox-section">
+            <div class="flexbox-wrapper">
+                <div class="flexbox-element flexbox-title">
+                    <div>
+                        <h2>Display: Flex</h2>
+                    </div>
+                </div>
+                <div class="flexbox-bottom">
+                    <div class="flexbox-element flexbox-left">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="flexbox-element flexbox-right">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <section id="positioning-elements" class="positioning-section">
+            <div class="positioning-wrapper">
+                <h2>Positioning</h2>
+                <h2>Elements</h2>
+                <div class = "circle" style = "right: 0px; top: 0px"></div>
+                <div class = "circle" style = "right: 100px; bottom: 100px"></div>
+                <div class = "circle" style = "left: 0px; bottom: 0px"></div>
+                <div class="square" style= "right: 0px; bottom: 0px"></div>
+                <div class="square" style= "left: 500px; bottom: 150px"></div>
+            </div>
+        </section>
+        <section id="heading-usage" class="heading-section">
+            <div class="heading-wrapper">
+                <h1>Proper Heading Usage (h1)</h1>
+                <h2>A heading describes the content below it (h2)</h2>
+                <h3>Style of the text is not relevant (h3)</h3>
+                <p>Here is a paragraph about why text size does not affect the order of the headings. We want to consider the heirarchy of the information and not the styling for determining which tag we choose. (p)</p>
+                <h4>This could be another heading about text size (h4)</h4>
+                <p>And you could put another paragraph (or two, or three...) under this further describing the concept (p)</p>
+            </div>
+        </section>
+        <section id="simple-javascript" class="simple-javascript-section">
+            <div class="simple-javascript-wrapper">
+                <script>
+                    let counterValue = 0;
+                    function increaseCounterValue(){
+                        counterValue = counterValue + 1;
+                        console.log(counterValue);
+                        const counterDiv = document.querySelector("#counter");
+                        counterDiv.innerHTML = counterValue;
+                    }
+                </script>
+                <h2>Simple Javascript</h2>
+                <div class="counter-button-wrapper">
+                    <p id="counter">0</p>
+                    <div id="button">
+                        <button onclick="increaseCounterValue()">Click to Increase</button>
+                    </div>
+            </div>
+        </section>
+    </main>
     
+    <footer>
+        <div class="footer-wrapper">
+            <p>Cui Hua Lee Li - Fall 2024</p>
+        </div>
+    </footer>
 </body>
 </html>
